@@ -11,12 +11,12 @@ For example to run UCB algorithm, simply run `python main.py --algo ucb`
 
 **Upper Confidence Bound (Basic UCB)**
 
-![ETC](plots/etc.png)
+![ETC](plots/ucb.png)
 
 **Minimax-Optimal Strategy in Stochastic Multi Armed Bandits (MOSS)**
 
-![ETC](plots/etc.png)
+![ETC](plots/moss.png)
 
 **Kullback-Leibler Upper Confidence Bound (KL-UCB)**
 
-![ETC](plots/etc.png)
+![ETC](plots/klucb.png)
