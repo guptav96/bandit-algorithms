@@ -6,10 +6,10 @@ import numpy as np
 
 np.random.seed(123456)
 
-from ucb import UCB
-from klucb import KLUCB
-from moss import MOSS
-from etc import ETC
+from algo.ucb import UCB
+from algo.klucb import KLUCB
+from algo.moss import MOSS
+from algo.etc import ETC
 
 parser = argparse.ArgumentParser(description='Bandit Algorithms')
 parser.add_argument('--algo', default='ucb', help='Which algo to run? ETC, UCB, MOSS or KL-UCB')
@@ -31,6 +31,7 @@ for idx, k in enumerate(num_arms_list):
   ### We use dirichlet distribution in this case
   alpha = np.random.randint(1, k+1, k)
   arm_means = np.random.dirichlet(alpha, size = 1).squeeze(0)
+  print(arm_means)
   legend = []
   if args.algo == 'etc':
       for n in num_steps_list:
